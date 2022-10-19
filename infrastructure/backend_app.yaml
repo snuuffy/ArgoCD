@@ -3,8 +3,8 @@ kind: Application
 metadata:
   name: backend
   annotations:
-    argocd-image-updater.argoproj.io/image-list: frontend=192.168.44.44:8082/docker_registry/backend
-    argocd-image-updater.argoproj.io/frontend.update-strategy: latest
+    argocd-image-updater.argoproj.io/image-list: backend=192.168.44.44:8082/docker_registry/backend
+    argocd-image-updater.argoproj.io/backend.update-strategy: latest
     argocd-image-updater.argoproj.io/write-back-method: argocd
 spec:
   destination:
